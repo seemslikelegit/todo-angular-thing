@@ -1,0 +1,6 @@
+<div>
+  <button (click)="createTodo()">Change the world</button>
+    <div *ngFor="let todo of todoService.todos">
+      <app-todo-item [todo]="todo"></app-todo-item>
+    </div>
+</div>
