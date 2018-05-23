@@ -1,6 +1,5 @@
 .todo{ 
     display: flex; 
-    /* margin-bottom: 15px;  */
     border-top: 1px solid gray; 
     z-index: 2;
     position: relative;
