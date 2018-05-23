@@ -25,9 +25,8 @@ export class TodoListComponent implements OnInit {
   
   createTodo() {
     const title = window.prompt("What do you want to accomplish?")
-    if(!title) return
-    let todo = {title, completed: false, id: null}
-    this.todoService.addTodo(todo)
+    if(!title || !title.trim()) return
+    this.todoService.addTodo(title)
   }
   get todos() {
     return this.todoService.todos

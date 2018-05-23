@@ -1,6 +1,6 @@
 .todo{ 
     display: flex; 
-    border-top: 1px solid gray; 
+    border-top: 1px solid #e6ebed; 
     z-index: 2;
     position: relative;
     height: 30px;
@@ -36,7 +36,7 @@ input[type="checkbox"] + label{
  box-shadow: 0px 1px 1px 0px rgba(41, 133, 203, 0.17);
 }
 input[type="checkbox"]:checked + label{
- background-image: url("../../assets/checkmark-icon.svg");
+ background-image: url("../../assets/icons/checkmark-icon.svg");
  border-color: #c0c0c0;
 }
 .completed {
@@ -46,7 +46,7 @@ input[type="checkbox"]:checked + label{
 .todo__delete-btn {
     display: none;
     background-color: transparent;
-    background-image: url("../../assets/trash-icon.svg");
+    background-image: url("../../assets/icons/trash-icon.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 12px 14px;
