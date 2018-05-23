@@ -1,0 +1,89 @@
+.todo{ 
+    display: flex; 
+    /* margin-bottom: 15px;  */
+    border-top: 1px solid gray; 
+    z-index: 2;
+    position: relative;
+    height: 30px;
+    padding: 9px 10px 6px 14px;
+} 
+.todo:hover .todo__delete-btn {
+    display: flex;
+    align-self: center;
+}
+.todo + .todo{ 
+    border-top: none; 
+} 
+input[type="checkbox"]{
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    position: relative;
+    display: none;
+}
+input[type="checkbox"] + label{
+ content: "";
+ background-repeat: no-repeat;
+ display: block;
+ width: 18px;
+ height: 18px;
+ box-sizing: border-box;
+ border: 1px solid #6bb3ca;
+ cursor: pointer;
+ background-repeat: no-repeat;
+ background-position: center center;
+ /* margin-right: 15px; */
+ box-shadow: 0px 1px 1px 0px rgba(41, 133, 203, 0.17);
+}
+input[type="checkbox"]:checked + label{
+ background-image: url("../../assets/checkmark-icon.svg");
+ border-color: #c0c0c0;
+}
+.completed {
+    text-decoration: line-through;
+}
+
+.todo__delete-btn {
+    display: none;
+    background-color: transparent;
+    background-image: url("../../assets/trash-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px 14px;
+    border: none;
+    width: 18px;
+    height: 18px;
+    outline: none;
+    cursor: pointer;
+    opacity: .8;
+    transition: .4s
+}
+.todo__delete-btn:hover {
+    opacity: 1;
+    align-self: center;
+}
+
+.todo__input{ 
+    border: 0; 
+    background: transparent; 
+    outline: none; 
+    flex: 1; 
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8b8f97;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-right: 22px;
+}

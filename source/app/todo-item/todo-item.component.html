@@ -1,0 +1,9 @@
+<div class="todo">
+    <div class="checkbox">
+        <input type="checkbox" id="{{todo.id}}" name="{{todo.title}}" [(ngModel)]="todo.completed">
+        <label class="checkbox-label" for="{{todo.id}}"></label>
+    </div>
+    <input class="todo__input" [ngClass]="{'completed':todo.completed}"[(ngModel)]="todo.title" placeholder="title">
+    <button class="todo__delete-btn" type="button" (click)="deleteTodo(todo.id)"></button>
+    <!-- <button class="todo__delete-btn" type="button" (click)="deleteTodo()"></button> -->
+  </div>

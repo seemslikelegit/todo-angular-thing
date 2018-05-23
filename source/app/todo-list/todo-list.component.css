@@ -1,0 +1,31 @@
+.create-button {
+    background-color: transparent;
+    background-image: url("../../assets/plus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 8px 8px;
+    border: none;
+    width: 18px;
+    height: 18px;
+    outline: none;
+}
+.wrapper {
+    position: relative;
+}
+.wrapper:before, .wrapper:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 38px;
+    width: 1px;
+    background: #f2e3df;
+    z-index: 1;
+}
+.wrapper:before{
+    left: 43px;
+}
+.header {
+    padding-left: 50px;
+    line-height: 42px;
+}

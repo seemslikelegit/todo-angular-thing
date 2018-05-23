@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <div class="header">
+        <button (click)="createTodo()" class="create-button"></button>
+    </div>
+      <app-todo-item *ngFor="let todo of todos" [todo]="todo"></app-todo-item>
+  </div>
