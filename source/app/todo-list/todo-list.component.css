@@ -5,7 +5,7 @@
     background-position: center center;
     background-size: 8px 8px;
     border: none;
-    width: 18px;
+    width: auto;
     height: 18px;
     outline: none;
 }
@@ -27,5 +27,9 @@
 }
 .header {
     padding-left: 50px;
-    line-height: 42px;
+    line-height: 40px;
+}
+
+.header > button:hover {
+    cursor: pointer;
 }

@@ -4,8 +4,7 @@
     z-index: 2;
     position: relative;
     left: 2px;
-    height: 30px;
-    padding: 9px 10px 6px 14px;
+    padding: 9px 10px;
 } 
 .todo:hover .todo__delete-btn {
     display: flex;
@@ -72,17 +71,17 @@ input[type="checkbox"]:checked + label{
     font-size: 12px;
     font-weight: bold;
     color: #8b8f97;
-    margin-left: 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: flex;
+    align-self: flex-start;
 }
 
 .checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    align-self: flex-start;
     margin-right: 22px;
 }
